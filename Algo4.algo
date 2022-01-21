@@ -1,0 +1,14 @@
+    PROCÉDURE tri_insertion(VAR arr : TABLEAU_DE ENTIER)
+    VAR
+        i,j,current : INTEGER ;
+    COMMENCER
+        POUR i DE 1 À arr.longueur-1 FAIRE
+            courant := arr [i];
+            j := i-1;
+            TANTQUE (j >= 0 ET arr[j] > courant) FAIRE
+                tab[j+1] := tab[j] ;
+                j := j-1;
+            END_WHILE
+            tab[j+1] = courant ;
+        END_FOR
+    FINIR
